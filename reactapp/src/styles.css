@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+
+div {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+p#time {
+    font-size: 48px;
+    margin: 20px;
+}
+
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

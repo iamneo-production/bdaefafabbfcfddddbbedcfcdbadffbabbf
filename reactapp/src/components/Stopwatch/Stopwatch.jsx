@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./../"
 const Stopwatch = () => {
     const [time, setTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
@@ -35,13 +35,13 @@ const Stopwatch = () => {
     };
 
     return (
-        <div className="watchContainer">
+        <div>
             <h1> React Stopwatch </h1>
             <p id="time" data-testid="time">
                 {new Date(time * 1000).toISOString().substr(11, 8)}
             </p>
             {!hasStarted ? (
-                <div className="buttonContainer">
+                <div>
                     <button id="start" data-testid="start" onClick={handleStart}>
                         Start
                     </button>
@@ -50,7 +50,7 @@ const Stopwatch = () => {
                     </button>
                 </div>
             ) : isRunning ? (
-                <div className="buttonContainer">
+                <div>
                     <button id="pause" data-testid="pause" onClick={handlePause}>
                         Pause
                     </button>
@@ -59,7 +59,7 @@ const Stopwatch = () => {
                     </button>
                 </div>
             ) : (
-                <div className="buttonContainer">
+                <div>
                     <button id="resume" data-testid="resume" onClick={handleResume}>
                         Resume
                     </button>
