@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./../"
+import "./../../styles.css"
 const Stopwatch = () => {
     const [time, setTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
